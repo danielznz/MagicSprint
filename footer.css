@@ -1,0 +1,22 @@
+/*Rodapé*/
+footer {
+    background-color: #c81d3f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .contact-info p {
+    margin: 10px 0;
+}
+
+footer .contact-info i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}

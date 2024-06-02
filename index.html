@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpringToys</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -12,7 +14,6 @@
         <nav>
             <div class="logo">
                 <img src="imgs/logo.png" alt="SpringToys">
-                <span>SpringToys</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -21,27 +22,19 @@
                 <li><a href="login.html">Administração</a></li>
             </ul>
             <button id="theme-toggle">
-                <img src="imgs/clima.png" alt="Mudar Tema">
             </button>
         </nav>
     </header>
     <main>
-        <section class="welcome-section">
-        </section>
-        
         <section class="featured-toys">
-            <h2><i class="fa fa-star"></i> Brinquedos em Destaque</h2>
+            <h1>Brinquedos em Destaque</h1>
+            <hr>
             <div id="featured-toys-container" class="cards-container">
                 <!-- Cards serão adicionados aqui pelo JavaScript -->
             </div>
         </section>
-        <section class="promo-toys">
-            <h2><i class="fa fa-tags"></i> Brinquedos em Promoção</h2>
-            <div id="promo-toys-container" class="cards-container">
-                <!-- Cards serão adicionados aqui pelo JavaScript -->
-            </div>
-        </section>
     </main>
+
     <footer>
         <div class="footer-content">
             <p>SpringToys é uma loja de brinquedos que oferece uma ampla variedade de produtos para crianças de todas as idades.</p>
@@ -52,8 +45,8 @@
                 <p><i class="fa fa-envelope"></i> Email: contato@springtoys.com</p>
             </div>
         </div>
-        
     </footer>
+
     <script>
         document.getElementById('theme-toggle').addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
@@ -73,7 +66,6 @@
                                 <a href="detalhes_brinquedo.html?brinquedoId=${toy.codBrinquedo}">
                                 <img src="${toy.imagem}" alt="${toy.nome}">
                                 <h3>${toy.nome}</h3>
-                                <p>${toy.descricao}</p>
                                 <p>R$ ${toy.valor}</p>
                             </a>
                             `;
