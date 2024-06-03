@@ -1,50 +1,84 @@
-:root {
-    --background-color: #f9f9f9;
-    --text-color: #333333;
-    --header-background: #ffeb3b;
-    --footer-background:  #ffeb3b;
-    --button-background: #f0c14b;
-    --button-text-color: #333333;
-    --card-background: #ffffff;
-    --card-hover-background: #ffe0b2;
-    --primary-color: #ff5722;
-    --secondary-color: #ff9800;
-    --hover-color: #ffd54f;
-}
-
-body.dark-theme {
-    --background-color: #333333;
-    --text-color: #ffffff;
-    --header-background: #555555;
-    --footer-background: #444444;
-    --button-background: #ff9800;
-    --button-text-color: #ffffff;
-    --card-background: #444444;
-    --card-hover-background: #555555;
-    --primary-color: #ff9800;
-    --secondary-color: #ff5722;
-    --hover-color: #ff7043;
-}
-
+/* Estilos gerais */
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+<<<<<<< HEAD
 
 
 main {
     padding: 30px;
+=======
+header {
+    background-color: #c81d3f;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header button#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header button#theme-toggle img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Estilos para a seção de administração */
+.admin-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+>>>>>>> 0ccf64d1f3d6127231b8b52df8e359a9bc68f3a8
 }
 
 .admin-section h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
+/* Estilos para o container dos cartões de administração */
 .admin-container {
     display: flex;
     flex-wrap: wrap;
@@ -52,47 +86,28 @@ main {
     gap: 20px;
 }
 
+/* Estilos para os cartões de administração */
 .admin-card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: var(--card-background);
-    color: var(--text-color);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Ajusta a largura para 3 cards por linha */
+    max-width: 250px;
     text-align: center;
-    width: 300px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .admin-card:hover {
-    background-color: var(--card-hover-background);
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
-
-footer {
-    background-color: var(--footer-background);
-    color: var(--text-color);
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-footer .contact-info p {
+.admin-card h3 {
+    font-size: 1rem;
     margin: 10px 0;
-}
-
-footer .contact-info i {
-    margin-right: 10px;
-    color: var(--primary-color);
+    color: #333;
 }
