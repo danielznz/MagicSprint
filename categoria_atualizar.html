@@ -87,10 +87,13 @@
                 .then(data => {
                     // Atualiza a lista de administradores ou faça alguma ação
                     Swal.fire({
-                        title: "Categoria atualizada com sucesso!",
-                        text: "todos os dados da categoria foi alterado",
-                        icon: "success",
-                        confirmButtonColor: "#3085d6"
+                    title: "Você tem certeza?",
+                     text: "Você não podera reverter isso!",
+                    icon: "Aviso",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                     confirmButtonText: "Sim, atualizar esse produto!"
                       }).then((result) => {
                         if (result.isConfirmed) {
                         window.location.href ="categoria.html";
