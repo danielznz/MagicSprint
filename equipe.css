@@ -15,46 +15,7 @@ body{
 
 /*Barra de navegação*/
 
-.nav-bar{
-    display: flex;
-    height: 110px;
-    justify-content: center;
-    align-items: center;
-    background-color: #c81d3f;
-    font-size: 22px;
-    color: white;
-    margin-bottom: 30px;
-}
 
-.logo{
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.logo img{
-    width: 80px;
-    height: 80px;
-}
-
-.nav-links{
-    flex: 80%;
-    text-align: right;
-    padding-right: 100px;
-}
-
-.nav-links a{
-    text-decoration: none;
-    margin: 2px 20px;
-    cursor: pointer;
-    color: white;
-}
-
-.nav-links a:hover{
-    border-bottom: 2px solid white;
-}
-
-/*fim da nav bar*/
 
 /* espaço do banner */
 
@@ -146,39 +107,19 @@ body{
 
 /*Rodapé*/
 
-footer {
-    background-color: #c81d3f;
-    color: white;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-footer .contact-info p {
-    margin: 10px 0;
-}
-
-footer .contact-info i {
-    margin-right: 10px;
-    color: var(--primary-color);
-}
-/* fim do rodapé*/
 
 /* pagina da equipe*/
 .equipe-section h1 {
     text-align: center;
     margin-bottom: 30px;
+   
 }
 
 .equipe-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Alterei para space-between para distribuir os cards horizontalmente */
+    margin-top: 11rem;
 }
 
 .membro-card {
