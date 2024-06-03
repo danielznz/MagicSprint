@@ -1,0 +1,69 @@
+.toy-details-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toy-details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a imagem do brinquedo */
+.toy-details-container img {
+    max-width: 20%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o título do brinquedo */
+.toy-details-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a descrição do brinquedo */
+.toy-details-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o preço do brinquedo */
+.toy-details-container .toy-price {
+    font-size: 1.5rem;
+    color: #c81d3f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botão de compra */
+.toy-details-container .buy-button {
+    background-color: #c81d3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toy-details-container .buy-button:hover {
+    background-color: #a01634;
+}

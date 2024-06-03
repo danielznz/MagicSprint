@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header .logo img {
+    height: 70px;
+    width: 70px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 8rem;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Estilos para a seção do catálogo */
+.catalogo-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.catalogo-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o container das categorias */
+.catalogo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para os cartões de categoria */
+.categoria-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Ajusta a largura para 3 cards por linha */
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Reduz o padding para diminuir o tamanho geral */
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.categoria-card img {
+    width: 100px; /* Define um tamanho menor para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.categoria-card h3 {
+    color: #333;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+
+}
+
+.produto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #000000;
+    margin-bottom: 10.5rem;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(211, 0, 0, 15);
+    cursor: pointer;
+}
+
+.produto-card img {
+    max-width: 100%;
+    max-height: 140px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1rem;
+}
+
+.produto-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    margin-top: 3rem;
+}
+
+.produto-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.produto-card a:hover {
+    text-decoration: underline;
+    color: #c81d3f;
+}
+
