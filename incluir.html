@@ -67,6 +67,10 @@
                     <select id="categoria" name="categoria" multiple>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="destaque">Destaque:</label>
+                    <input type="number" id="destaque" name="destaque" min="0" max="1" placeholder="Digite 1 para destacar na tela inicial" required>
+                </div>
                 <button type="submit" class="save-button">Salvar</button>
             </form>
         </section>
@@ -117,13 +121,14 @@
                 const detalhes = document.getElementById('detalhes').value;
                 const marca = document.getElementById('marca').value;
                 const categorias = Array.from(document.getElementById('categoria').selectedOptions).map(option => option.value);
+                const destaque = document.getElementById('destaque').value;
         
                 fetch('http://localhost:8080/api/brinquedos', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ codigo, nome, descricao, valor, imagem, detalhes, marca })
+                    body: JSON.stringify({ codigo, nome, descricao, valor, imagem, detalhes, marca, destaque})
                 })
                 .then(response => {
                     if (response.ok) {

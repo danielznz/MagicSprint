@@ -58,16 +58,29 @@
                         data.forEach(usuario => {
                             if (email === usuario.email && password === usuario.senha) {
                                 loginSuccess = true;
-                                Swal.fire({
-                                    icon: 'success',
-                                    title: 'Login bem-sucedido',
-                                    text: 'Redirecionando para a página de administração...',
-                                    timer: 2000,
-                                    timerProgressBar: true,
-                                    didClose: () => {
-                                        window.location.href = 'admin.html';
-                                    }
-                                });
+                                if (usuario.permissao === "1") {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Login bem-sucedido',
+                                        text: 'Redirecionando para a página de administração...',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        didClose: () => {
+                                            window.location.href = 'admin.html';
+                                        }
+                                    });
+                                } else if (usuario.permissao === "0") {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Você não é um administrador',
+                                        text: 'Redirecionando para a página inicial...',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        didClose: () => {
+                                            window.location.href = 'index.html';
+                                        }
+                                    });
+                                }
                             }
                         });
                         if (!loginSuccess) {
