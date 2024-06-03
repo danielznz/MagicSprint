@@ -60,3 +60,26 @@
     text-decoration: underline;
 }
 
+button.update {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button.update:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* "Excluir" button styling */
+button.delete {
+    background-color: #c81d3f; /* Red */
+    color: white;
+    padding: 5px;    
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #da190b; /* Darker red */
+}
+

@@ -12,7 +12,18 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+button.update,
+button.delete {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
 
+/* "Atualizar" button styling */
 
 
 #theme-toggle img {
