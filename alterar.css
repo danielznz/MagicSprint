@@ -1,0 +1,62 @@
+.admin-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.save-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0041ce;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.save-button:hover {
+    background-color: #00195e;
+}
+
+/* Estilo para a tabela */
+#adminList {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#adminList th {
+    padding: 10px;
+    background-color: #c81d3f;
+    color: #fff;
+    text-align: left;
+}
+
+#adminList td {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+#adminList td:first-child {
+    font-weight: bold;
+}
+#adminList a {
+    color: #c81d3f;
+    text-decoration: none;
+}
+
+#adminList a:hover {
+    text-decoration: underline;
+}
+
