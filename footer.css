@@ -20,3 +20,17 @@ footer .contact-info i {
     margin-right: 10px;
     color: var(--primary-color);
 }
+
+footer .footer-content {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .contact-info i {
+    margin-right: 8px;
+}
