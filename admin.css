@@ -7,6 +7,12 @@ body {
     color: #333;
 }
 
+<<<<<<< HEAD
+
+
+main {
+    padding: 30px;
+=======
 header {
     background-color: #c81d3f;
     color: white;
@@ -63,6 +69,7 @@ header button#theme-toggle img {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+>>>>>>> 0ccf64d1f3d6127231b8b52df8e359a9bc68f3a8
 }
 
 .admin-section h1 {
